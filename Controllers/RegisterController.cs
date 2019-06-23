@@ -32,7 +32,7 @@ namespace WebApplication1.Controllers
                     Token = Guid.NewGuid().ToString(),
                 });
                 
-                return Redirect("/");
+                return Redirect("login");
             }
 
             return View(model);

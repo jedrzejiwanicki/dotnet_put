@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2019.1/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.1/system/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_.19.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Controllers" t="Include">
+        <e p="BooksController.cs" t="Include" />
+        <e p="HomeController.cs" t="Include" />
+        <e p="LoginController.cs" t="Include" />
+        <e p="RegisterController.cs" t="Include" />
+      </e>
+      <e p="Data" t="Include">
+        <e p="Author.cs" t="Include" />
+        <e p="AuthorBook.cs" t="Include" />
+        <e p="Book.cs" t="Include" />
+        <e p="Context.cs" t="Include" />
+        <e p="User.cs" t="Include" />
+        <e p="UserBook.cs" t="Include" />
+      </e>
+      <e p="Migrations" t="Include">
+        <e p="20190622210213_users.Designer.cs" t="Include" />
+        <e p="20190622210213_users.cs" t="Include" />
+        <e p="20190623124120_initial_1.Designer.cs" t="Include" />
+        <e p="20190623124120_initial_1.cs" t="Include" />
+        <e p="20190623125425_initial_2.Designer.cs" t="Include" />
+        <e p="20190623125425_initial_2.cs" t="Include" />
+        <e p="20190623125714_initial_3.Designer.cs" t="Include" />
+        <e p="20190623125714_initial_3.cs" t="Include" />
+        <e p="20190623125935_initial_4.Designer.cs" t="Include" />
+        <e p="20190623125935_initial_4.cs" t="Include" />
+        <e p="20190623130722_initial_5.Designer.cs" t="Include" />
+        <e p="20190623130722_initial_5.cs" t="Include" />
+        <e p="20190623131302_initial_6.Designer.cs" t="Include" />
+        <e p="20190623131302_initial_6.cs" t="Include" />
+        <e p="20190623140756_change_user.Designer.cs" t="Include" />
+        <e p="20190623140756_change_user.cs" t="Include" />
+        <e p="20190623161448_newtables.Designer.cs" t="Include" />
+        <e p="20190623161448_newtables.cs" t="Include" />
+        <e p="20190623211028_seed.Designer.cs" t="Include" />
+        <e p="20190623211028_seed.cs" t="Include" />
+        <e p="ContextModelSnapshot.cs" t="Include" />
+      </e>
+      <e p="Models" t="Include">
+        <e p="BookListViewModel.cs" t="Include" />
+        <e p="CreateBookViewModel.cs" t="Include" />
+        <e p="ErrorViewModel.cs" t="Include" />
+        <e p="LoginViewModel.cs" t="Include" />
+        <e p="NavbarViewModel.cs" t="Include" />
+        <e p="RegisterViewModel.cs" t="Include" />
+      </e>
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="Services" t="Include">
+        <e p="AuthenticateService.cs" t="Include" />
+        <e p="BooksService.cs" t="Include" />
+        <e p="UserService.cs" t="Include" />
+      </e>
+      <e p="Startup.cs" t="Include" />
+      <e p="Validators" t="Include">
+        <e p="LoginViewModelValidator.cs" t="Include" />
+        <e p="RegisterViewModelValidator.cs" t="Include" />
+      </e>
+      <e p="ViewComponents" t="Include">
+        <e p="NavbarViewComponent.cs" t="Include" />
+      </e>
+      <e p="Views" t="Include">
+        <e p="Books" t="Include">
+          <e p="CreateBook.cshtml" t="Include" />
+          <e p="Index.cshtml" t="Include" />
+        </e>
+        <e p="Home" t="Include">
+          <e p="Index.cshtml" t="Include" />
+          <e p="Privacy.cshtml" t="Include" />
+        </e>
+        <e p="Login" t="Include">
+          <e p="Index.cshtml" t="Include" />
+          <e p="Index.cshtml.cs" t="Include" />
+        </e>
+        <e p="Register" t="Include">
+          <e p="Index.cshtml" t="Include" />
+        </e>
+        <e p="Shared" t="Include">
+          <e p="Components" t="Include">
+            <e p="Navbar" t="Include">
+              <e p="Default.cshtml" t="Include" />
+            </e>
+          </e>
+          <e p="Error.cshtml" t="Include" />
+          <e p="_CookieConsentPartial.cshtml" t="Include" />
+          <e p="_Layout.cshtml" t="Include" />
+          <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+        </e>
+        <e p="_ViewImports.cshtml" t="Include" />
+        <e p="_ViewStart.cshtml" t="Include" />
+      </e>
+      <e p="WebApplication1.csproj" t="IncludeRecursive" />
+      <e p="app.config" t="Include" />
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp2.2" t="Include">
+            <e p="WebApplication1.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="wwwroot" t="Include">
+        <e p="css" t="Include">
+          <e p="site.css" t="Include" />
+        </e>
+        <e p="favicon.ico" t="Include" />
+        <e p="js" t="Include">
+          <e p="site.js" t="Include" />
+        </e>
+        <e p="lib" t="Include">
+          <e p="bootstrap" t="Include">
+            <e p="LICENSE" t="Include" />
+            <e p="dist" t="Include">
+              <e p="css" t="Include">
+                <e p="bootstrap-grid.css" t="Include" />
+                <e p="bootstrap-grid.css.map" t="Include" />
+                <e p="bootstrap-grid.min.css" t="Include" />
+                <e p="bootstrap-grid.min.css.map" t="Include" />
+                <e p="bootstrap-reboot.css" t="Include" />
+                <e p="bootstrap-reboot.css.map" t="Include" />
+                <e p="bootstrap-reboot.min.css" t="Include" />
+                <e p="bootstrap-reboot.min.css.map" t="Include" />
+                <e p="bootstrap.css" t="Include" />
+                <e p="bootstrap.css.map" t="Include" />
+                <e p="bootstrap.min.css" t="Include" />
+                <e p="bootstrap.min.css.map" t="Include" />
+              </e>
+              <e p="js" t="Include">
+                <e p="bootstrap.bundle.js" t="Include" />
+                <e p="bootstrap.bundle.js.map" t="Include" />
+                <e p="bootstrap.bundle.min.js" t="Include" />
+                <e p="bootstrap.bundle.min.js.map" t="Include" />
+                <e p="bootstrap.js" t="Include" />
+                <e p="bootstrap.js.map" t="Include" />
+                <e p="bootstrap.min.js" t="Include" />
+                <e p="bootstrap.min.js.map" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="jquery" t="Include">
+            <e p="LICENSE.txt" t="Include" />
+            <e p="dist" t="Include">
+              <e p="jquery.js" t="Include" />
+              <e p="jquery.min.js" t="Include" />
+              <e p="jquery.min.map" t="Include" />
+            </e>
+          </e>
+          <e p="jquery-validation" t="Include">
+            <e p="LICENSE.md" t="Include" />
+            <e p="dist" t="Include">
+              <e p="additional-methods.js" t="Include" />
+              <e p="additional-methods.min.js" t="Include" />
+              <e p="jquery.validate.js" t="Include" />
+              <e p="jquery.validate.min.js" t="Include" />
+            </e>
+          </e>
+          <e p="jquery-validation-unobtrusive" t="Include">
+            <e p="LICENSE.txt" t="Include" />
+            <e p="jquery.validate.unobtrusive.js" t="Include" />
+            <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+          </e>
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

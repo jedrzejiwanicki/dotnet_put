@@ -1,0 +1,36 @@
+@using WebApplication1.Data
+@model List<BookListViewModel>
+
+@await Component.InvokeAsync("Navbar")
+
+<section class="d-flex justify-content-center flex-column">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Authors</th>
+      <th scope="col">Owned</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+          <tr>
+            <td>@book.Name</td>
+            <td>@string.Join(",", book.Authors)</td>
+            <td>
+              <form asp-action="AddBook" method="get">
+                <input type="hidden" value="@book.Id" name="Id">
+                <button disabled="@book.IsUserOwner" class="btn btn-primary" value="@book.Id">
+                  @(@book.IsUserOwner ? "Owned" : "Add")
+                </button>
+              </form>
+            </td>
+          </tr>
+    
+        }
+    </tbody>
+
+  </table>
+
+</section>

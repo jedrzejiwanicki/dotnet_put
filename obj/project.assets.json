@@ -3126,7 +3126,7 @@
   },
   "libraries": {
     "FluentValidation/8.4.0": {
-      "sha512": "HGWLOCywqku5v8tWe6YfK/9XCgZbMDGtKq6fCHo2cn+dyTkN5Ibcx41NBWp/RgV7/cp5fmBUeeqiASvGiCTjWQ==",
+      "sha512": "/VApywgD2sqD3aB1tzub6SIItmwxXN0D5yAiP3kuFHmjYO1W+Ryi531/m4O03/hlfcYrBgewDJn7Jd1Xk0vTdw==",
       "type": "package",
       "path": "fluentvalidation/8.4.0",
       "files": [
@@ -3145,7 +3145,7 @@
       ]
     },
     "FluentValidation.AspNetCore/8.4.0": {
-      "sha512": "jQNYv56HFmbfBjVLugdwGjQ5OfxptddNalGiQ2pcP0yeaNGTYKER+u/hXBOPiHtA/GYtcncAPy25Zsl3qaaE+Q==",
+      "sha512": "yF6P6FLwk2nSYmNR7oPMAMi8rTtrqjcchY0hX9JwJkhAWBcZAxVyLdb64OFSUfSZ2dL7Dmuu8AI3/iCNvUOlUQ==",
       "type": "package",
       "path": "fluentvalidation.aspnetcore/8.4.0",
       "files": [
@@ -3158,7 +3158,7 @@
       ]
     },
     "FluentValidation.DependencyInjectionExtensions/8.4.0": {
-      "sha512": "2zt09jLpQH8fQs7YLYXIqwGQap9peBOxY504g9NFfq+xik1cs2iAj4NchASq3RbL+fmKa7alNocadP7UBObUXw==",
+      "sha512": "RZdsBuUJCXGhyjy/XY5E3Xk5VbbCEWc78Qp8Zez0YkTWfdlCuH1Ef2+rg0Ng2ayb7yhinLlSe1YxB9/7j9c7iQ==",
       "type": "package",
       "path": "fluentvalidation.dependencyinjectionextensions/8.4.0",
       "files": [
@@ -4123,7 +4123,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Design/2.2.4": {
-      "sha512": "A/erLygjDeavpkI0W5cqbfIqhm3qz34x1ObW3GQMatxyBEBzmja3P2JNvErWkdiHkojNTxDQADXVuf0YeMotUg==",
+      "sha512": "4SfnD7wYxr+OzcPOZYlzPtKtL1cdXk+a8g4bKc8QcgaGhpvVOTK5ROTZaOe10tmvFXFEJVZSGtXpFAbgiDFtjg==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.design/2.2.4",
       "files": [
@@ -4140,7 +4140,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/2.2.4": {
-      "sha512": "h+M/sXgQSXlcyKLYH5x+Ah7vKE+6JIh2IUPQi9lbUka5rBYIX+B6yBt3uY5/occAbrACVGK/9tU9hy9V01KgBg==",
+      "sha512": "Ga+kJhoSBNYv8C2gQl2sB5bTBkWsLFn92CPjZA5ql/MyxJTWri6lf44/GSYEcOQj0tqF5HhMAaB1HxQMiIPBcQ==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational/2.2.4",
       "files": [
@@ -9000,23 +9000,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/chomay/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "/home/jiwanicki/.nuget/packages/": {},
+    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/chomay/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+      "projectUniqueName": "/home/jiwanicki/Documents/dotnet_put/WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "/Users/chomay/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
-      "packagesPath": "/Users/chomay/.nuget/packages/",
-      "outputPath": "/Users/chomay/RiderProjects/WebApplication1/WebApplication1/obj/",
+      "projectPath": "/home/jiwanicki/Documents/dotnet_put/WebApplication1.csproj",
+      "packagesPath": "/home/jiwanicki/.nuget/packages/",
+      "outputPath": "/home/jiwanicki/Documents/dotnet_put/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/chomay/.nuget/NuGet/NuGet.Config"
+        "/home/jiwanicki/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

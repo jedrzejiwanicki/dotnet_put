@@ -9,21 +9,23 @@ namespace WebApplication1.ViewComponents
     public class NavbarViewComponent: ViewComponent
     {
         private readonly AuthenticateService authenticateService;
+        private readonly UserService userService;
         
-        public NavbarViewComponent(AuthenticateService authenticateService)
+        public NavbarViewComponent(AuthenticateService authenticateService, UserService userService)
         {
             this.authenticateService = authenticateService;
+            this.userService = userService;
         }
         
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            string token = HttpContext.Request.Cookies["Token"];
             
-            bool isAuthenticated = this.authenticateService.IsAuthenticated(token);
-            NavbarViewModel model = new NavbarViewModel() { IsAuthenticated = isAuthenticated};
+            NavbarViewModel model = new NavbarViewModel()
+            {
+                IsAuthenticated = this.authenticateService.IsAuthenticated(),
+                IsAdminPrivileged = this.userService.UserIsAdmin(),
+            };
             
-            Console.WriteLine(model.IsAuthenticated);
-            Console.WriteLine(token);
             
             return await Task.Run(() => View("Default", model));
         }

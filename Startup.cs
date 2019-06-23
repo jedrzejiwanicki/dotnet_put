@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Buffers;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,6 +14,9 @@ using Microsoft.Extensions.DependencyInjection;
 using WebApplication1.Data;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Newtonsoft.Json;
 using WebApplication1.Models;
 using WebApplication1.Services;
 using WebApplication1.Validators;
@@ -39,9 +43,17 @@ namespace WebApplication1
             });
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddFluentValidation();
-
+            services.AddSingleton<HttpContextAccessor>();
             
+            services.AddMvc(options =>
+            {
+                options.OutputFormatters.Clear();
+                options.OutputFormatters.Add(new JsonOutputFormatter(new JsonSerializerSettings()
+                {
+                    ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+                }, ArrayPool<char>.Shared));
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddFluentValidation();
+
             // Add validators
             
             services.AddTransient<IValidator<LoginViewModel>, LoginViewModelValidator>();
@@ -52,11 +64,12 @@ namespace WebApplication1
             
             services.AddTransient<UserService>();
             services.AddTransient<AuthenticateService>();
+            services.AddTransient<BooksService>();
             
             // Add database context
             
             services.AddDbContext<Context>(options =>
-                options.UseMySql("server=localhost;port=3306;database=communities;uid=root;password=adminadmin"));
+                options.UseMySql(Configuration["DefaultConnections"]));
 
         }
 
@@ -91,6 +104,10 @@ namespace WebApplication1
                 routes.MapRoute(
                     name: "register",
                     template: "controller=Register/{action=Index}");
+                
+                routes.MapRoute(
+                    name: "books",
+                    template: "controller=Books/{action=Index}");
             });
         }
     }

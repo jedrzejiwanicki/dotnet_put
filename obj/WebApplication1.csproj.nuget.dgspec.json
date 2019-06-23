@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/chomay/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj": {}
+    "/home/jiwanicki/Documents/dotnet_put/WebApplication1.csproj": {}
   },
   "projects": {
-    "/Users/chomay/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj": {
+    "/home/jiwanicki/Documents/dotnet_put/WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chomay/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+        "projectUniqueName": "/home/jiwanicki/Documents/dotnet_put/WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "/Users/chomay/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
-        "packagesPath": "/Users/chomay/.nuget/packages/",
-        "outputPath": "/Users/chomay/RiderProjects/WebApplication1/WebApplication1/obj/",
+        "projectPath": "/home/jiwanicki/Documents/dotnet_put/WebApplication1.csproj",
+        "packagesPath": "/home/jiwanicki/.nuget/packages/",
+        "outputPath": "/home/jiwanicki/Documents/dotnet_put/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/chomay/.nuget/NuGet/NuGet.Config"
+          "/home/jiwanicki/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"

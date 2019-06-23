@@ -16,14 +16,140 @@ namespace WebApplication1.Migrations
                 .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("WebApplication1.Data.Author", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Authors");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            Name = "John Doe"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            Name = "Jack Black"
+                        },
+                        new
+                        {
+                            Id = "3",
+                            Name = "Jane White"
+                        });
+                });
+
+            modelBuilder.Entity("WebApplication1.Data.AuthorBook", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("AuthorId");
+
+                    b.Property<string>("BookId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("BookId");
+
+                    b.ToTable("AuthorBooks");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            AuthorId = "1",
+                            BookId = "1"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            AuthorId = "1",
+                            BookId = "2"
+                        },
+                        new
+                        {
+                            Id = "3",
+                            AuthorId = "2",
+                            BookId = "3"
+                        },
+                        new
+                        {
+                            Id = "4",
+                            AuthorId = "3",
+                            BookId = "3"
+                        },
+                        new
+                        {
+                            Id = "5",
+                            AuthorId = "3",
+                            BookId = "4"
+                        },
+                        new
+                        {
+                            Id = "6",
+                            AuthorId = "3",
+                            BookId = "5"
+                        });
+                });
+
+            modelBuilder.Entity("WebApplication1.Data.Book", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Books");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            Name = "Green Mile"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            Name = "Book of Memes"
+                        },
+                        new
+                        {
+                            Id = "3",
+                            Name = "Red Dragon"
+                        },
+                        new
+                        {
+                            Id = "4",
+                            Name = "Catch 22"
+                        },
+                        new
+                        {
+                            Id = "5",
+                            Name = "Harry Potter"
+                        });
+                });
+
             modelBuilder.Entity("WebApplication1.Data.User", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Email");
 
                     b.Property<string>("Password");
+
+                    b.Property<int>("Role");
 
                     b.Property<string>("Token");
 
@@ -32,6 +158,74 @@ namespace WebApplication1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "123",
+                            Email = "admin@admin.com",
+                            Password = "admin",
+                            Role = 1,
+                            Token = "0151ae4f-3d5d-435d-b188-ec59e083f089",
+                            Username = "admin"
+                        },
+                        new
+                        {
+                            Id = "321",
+                            Email = "admin@admin.com",
+                            Password = "user",
+                            Role = 0,
+                            Token = "285ef9d5-75a9-4467-8890-8b4c4df5d091",
+                            Username = "user"
+                        });
+                });
+
+            modelBuilder.Entity("WebApplication1.Data.UserBook", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("BookId");
+
+                    b.Property<string>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserBooks");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            BookId = "1",
+                            UserId = "123"
+                        });
+                });
+
+            modelBuilder.Entity("WebApplication1.Data.AuthorBook", b =>
+                {
+                    b.HasOne("WebApplication1.Data.Author", "Author")
+                        .WithMany("AuthorBooks")
+                        .HasForeignKey("AuthorId");
+
+                    b.HasOne("WebApplication1.Data.Book", "Book")
+                        .WithMany("AuthorBooks")
+                        .HasForeignKey("BookId");
+                });
+
+            modelBuilder.Entity("WebApplication1.Data.UserBook", b =>
+                {
+                    b.HasOne("WebApplication1.Data.Book", "Book")
+                        .WithMany("UserBooks")
+                        .HasForeignKey("BookId");
+
+                    b.HasOne("WebApplication1.Data.User", "User")
+                        .WithMany("UserBooks")
+                        .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618
         }

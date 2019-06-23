@@ -39,8 +39,7 @@ namespace WebApplication1.Controllers
                     var options = new CookieOptions() {IsEssential = true};
                     
                     Response.Cookies.Append("Token", _user.Token, options);
-                    Console.WriteLine(_user.Token);
-                    
+
                     return Redirect("/");
                 }
 
